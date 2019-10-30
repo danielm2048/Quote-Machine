@@ -17,7 +17,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       quotes,
-      order: 0,
+      order: rand,
       text: quotes[rand].text,
       author: quotes[rand].author,
       picture: quotes[rand].picture
