@@ -17,7 +17,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       quotes,
-      order: rand,
+      order: 4,
       text: quotes[rand].text,
       author: quotes[rand].author,
       picture: quotes[rand].picture
@@ -51,8 +51,8 @@ class App extends React.Component {
           <div className="col">
           <ReactCSSTransitionGroup
               transitionName="carousel"
-              transitionEnterTimeout={2900}
-              transitionLeaveTimeout={2900}>
+              transitionEnterTimeout={300}
+              transitionLeaveTimeout={300}>
               <img className="picture-size" key={this.state.picture} src={this.state.picture} alt="Imagine this is the the person please!"/>
             </ReactCSSTransitionGroup>
           </div>

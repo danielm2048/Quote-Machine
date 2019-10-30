@@ -34,33 +34,33 @@
 
 }
 
-.example-enter {
+.fade-enter {
   opacity: 0.01;
 }
 
-.example-enter.example-enter-active {
+.fade-enter.fade-enter-active {
   opacity: 1;
   transition: opacity 500ms ease-in;
 }
 
-.example-leave {
+.fade-leave {
   opacity: 1;
 }
 
-.example-leave.example-leave-active {
+.fade-leave.fade-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
 }
 
 .carousel-enter {
   opacity: 0.01;
-  transform: translateX(100vw);
+  transform: translateX(0vw);
   
 }
 
 .carousel-enter.carousel-enter-active {
   opacity: 1;
-  transition:  4000ms ease-out;
+  transition:  1200ms ease-out;
   transform: translateX(0%);
 }
 
@@ -71,8 +71,8 @@
 
 .carousel-leave.carousel-leave-active {
   opacity: 0.01;
-  transition: 4000ms ease-out;
-  transform: translateX(-100vw);
+  transition: 1200ms ease-out;
+  transform: translateX(0vw);
 }
 
 .el {
