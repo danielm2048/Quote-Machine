@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  color: white;
+  font-size: calc(10px + 2vmin);
 }
 
 .App-logo {
@@ -7,16 +10,75 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+.picture-size {
+  width: 300px;
+  height: 300px;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.carousel-enter {
+  opacity: 0.01;
+  transform: translateX(100vw);
+  
+}
+
+.carousel-enter.carousel-enter-active {
+  opacity: 1;
+  transition:  4000ms ease-out;
+  transform: translateX(0%);
+}
+
+.carousel-leave {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.carousel-leave.carousel-leave-active {
+  opacity: 0.01;
+  transition: 4000ms ease-out;
+  transform: translateX(-100vw);
+}
+
+.el {
+  position: relative;
+}
+
+.comp {
+  position: absolute;
 }
