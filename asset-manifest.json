@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Quote-Machine/static/css/main.1d568dcc.chunk.css",
-    "main.js": "/Quote-Machine/static/js/main.ee16578e.chunk.js",
-    "main.js.map": "/Quote-Machine/static/js/main.ee16578e.chunk.js.map",
+    "main.css": "/Quote-Machine/static/css/main.db402087.chunk.css",
+    "main.js": "/Quote-Machine/static/js/main.419a9cd5.chunk.js",
+    "main.js.map": "/Quote-Machine/static/js/main.419a9cd5.chunk.js.map",
     "runtime-main.js": "/Quote-Machine/static/js/runtime-main.91753e5a.js",
     "runtime-main.js.map": "/Quote-Machine/static/js/runtime-main.91753e5a.js.map",
     "static/css/2.c0df5102.chunk.css": "/Quote-Machine/static/css/2.c0df5102.chunk.css",
     "static/js/2.3b55a657.chunk.js": "/Quote-Machine/static/js/2.3b55a657.chunk.js",
     "static/js/2.3b55a657.chunk.js.map": "/Quote-Machine/static/js/2.3b55a657.chunk.js.map",
     "index.html": "/Quote-Machine/index.html",
-    "precache-manifest.565a52250e5b30287f8d7d693be6226c.js": "/Quote-Machine/precache-manifest.565a52250e5b30287f8d7d693be6226c.js",
+    "precache-manifest.0c3c783dca1946e2b12163a3ad9a0792.js": "/Quote-Machine/precache-manifest.0c3c783dca1946e2b12163a3ad9a0792.js",
     "service-worker.js": "/Quote-Machine/service-worker.js",
     "static/css/2.c0df5102.chunk.css.map": "/Quote-Machine/static/css/2.c0df5102.chunk.css.map",
-    "static/css/main.1d568dcc.chunk.css.map": "/Quote-Machine/static/css/main.1d568dcc.chunk.css.map",
+    "static/css/main.db402087.chunk.css.map": "/Quote-Machine/static/css/main.db402087.chunk.css.map",
     "static/media/bootstrap.css": "/Quote-Machine/static/media/glyphicons-halflings-regular.fa277232.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.91753e5a.js",
     "static/css/2.c0df5102.chunk.css",
     "static/js/2.3b55a657.chunk.js",
-    "static/css/main.1d568dcc.chunk.css",
-    "static/js/main.ee16578e.chunk.js"
+    "static/css/main.db402087.chunk.css",
+    "static/js/main.419a9cd5.chunk.js"
   ]
 }
