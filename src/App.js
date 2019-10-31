@@ -7,7 +7,12 @@ const quotes = [
   { text: "A person who never made a mistake never tried anything new.", author: "- Albert Einstein", picture: "https://bit.ly/34gD1q6" },
   { text: "Winning isn’t everything, but wanting to win is.", author: "- Vince Lombardi", picture: "https://bit.ly/34enlDv"},
   { text: "Go confidently in the direction of your dreams. Live the life you have imagined.", author: "- Henry David Thoreau", picture: "https://bit.ly/2BUWZKH"},
-  { text: "The most common way people give up their power is by thinking they don’t have any.", author: "- Alice Walker", picture: "https://bit.ly/34a15uy"}
+  { text: "The most common way people give up their power is by thinking they don’t have any.", author: "- Alice Walker", picture: "https://bit.ly/34a15uy" },
+  { text: "Nothing is impossible, the word itself says, “I’m possible!”", author: "– Audrey Hepburn", picture: "https://bit.ly/2NuAtxN" },
+  { text: "What’s money? A man is a success if he gets up in the morning and goes to bed at night and in between does what he wants to do.", author: "- Bob Dylan", picture: "https://bit.ly/331PIoj" },
+  { text: "When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.", author: "- Henry Ford", picture: "https://bit.ly/2JCBYsF" },
+  { text: "Believe you can and you’re halfway there.", author: "- Theodore Roosevelt", picture: "https://bit.ly/2C9aV49" },
+  { text: "That person who helps others simply because it should or must be done, and because it is the right thing to do, is indeed without a doubt, a real superhero.", author: "- Stan Lee", picture: "https://bit.ly/2NpWeie"}
 ];
 
 let rand = Math.floor(Math.random() * quotes.length);
@@ -17,7 +22,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       quotes,
-      order: 4,
+      order: rand,
       text: quotes[rand].text,
       author: quotes[rand].author,
       picture: quotes[rand].picture
@@ -27,19 +32,21 @@ class App extends React.Component {
   handleClick() {
     if (this.state.order === this.state.quotes.length - 1) {
       this.setState({
+        order: 0
+      }, () => this.setState({
         text: this.state.quotes[this.state.order].text,
         author: this.state.quotes[this.state.order].author,
-        picture: this.state.quotes[this.state.order].picture,
-        order: 0
-      });
+        picture: this.state.quotes[this.state.order].picture
+      }));
     }
     else {
       this.setState({
+        order: this.state.order + 1
+      }, () => this.setState({
         text: this.state.quotes[this.state.order].text,
         author: this.state.quotes[this.state.order].author,
-        picture: this.state.quotes[this.state.order].picture,
-        order: this.state.order + 1
-      });
+        picture: this.state.quotes[this.state.order].picture
+      }));
     }
   }
   render() {
