@@ -60,7 +60,7 @@ class App extends React.Component {
               transitionName="carousel"
               transitionEnterTimeout={300}
               transitionLeaveTimeout={300}>
-              <img className="picture-size" key={this.state.picture} src={this.state.picture} alt="Imagine this is the the person please!"/>
+              <img className="picture-size" key={this.state.picture} src={this.state.picture} alt="Imagine this is the person please!"/>
             </ReactCSSTransitionGroup>
           </div>
           <div className="col">
