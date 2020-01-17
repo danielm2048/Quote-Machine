@@ -96,7 +96,7 @@ class App extends React.Component {
     }
   }
   async componentDidMount() {
-    const { data } = await axios.get('http://localhost:5000/quotes/api');
+    const { data } = await axios.get('https://gentle-beyond-48579.herokuapp.com/quotes/api');
     data.map(q => q.isChecked = true);
     this.setState({
       quotes: data,
