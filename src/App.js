@@ -53,7 +53,7 @@ class App extends React.Component {
       });
     }
     else {
-      if (this.state.order === this.state.checkedQuotes.length - 1 || this.state.checkedQuotes.length === 1) {
+      if (this.state.order === this.state.checkedQuotes.length - 1 || this.state.checkedQuotes.length <= this.state.order) {
         this.setState({
           order: 0
         }, () => this.setState({
