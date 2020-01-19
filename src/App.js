@@ -166,7 +166,7 @@ class App extends React.Component {
           <div className="row">
             <a id="tweet-quote" data-toggle="tooltip" title="Tweet this quote!" target="_blank" rel="noopener noreferrer" href={"https://twitter.com/intent/tweet?text=" + this.state.text + " " + this.state.author}><i className="fa fa-twitter" style={{ fontSize: 24 }}></i></a>
           </div>
-          <h6>Made With <i className="fa fa-heart" style={{ fontSize: 18 }}></i> By Daniel Mimoun</h6>
+          <h6><i className="fa fa-code" style={{ fontSize: 18 }}></i> With <i className="fa fa-heart" style={{ fontSize: 18 }}></i> By Daniel Mimoun</h6>
         </div>
       </div>
     );
