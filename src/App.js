@@ -24,7 +24,9 @@ function PrivateRoute({ component: Component, ...rest }) {
         user !== null ? (
           <Component {...props} />
         ) : (
-          <Redirect to={{ pathname: "/", state: { from: props.location } }} />
+          <Redirect
+            to={{ pathname: "/Quote-Machine", state: { from: props.location } }}
+          />
         )
       }
     />
@@ -55,8 +57,8 @@ class App extends React.Component {
           <div className="container App">
             <AppNavbar />
             <Switch>
-              <Route path="/" exact component={Quotes} />
-              <PrivateRoute path="/likes" component={Likes} />
+              <Route path="/Quote-Machine/" exact component={Quotes} />
+              <PrivateRoute path="/Quote-Machine/Likes" component={Likes} />
               <Route component={PageNotFound} />
             </Switch>
           </div>

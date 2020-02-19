@@ -52,7 +52,7 @@ class AppNavbar extends React.Component {
     const likesLink = (
       <React.Fragment>
         <NavItem>
-          <NavLink href="/likes">Likes</NavLink>
+          <NavLink href="/Quote-Machine/Likes">Likes</NavLink>
         </NavItem>
       </React.Fragment>
     );
@@ -72,7 +72,7 @@ class AppNavbar extends React.Component {
       <div>
         <Navbar color="dark" dark expand="sm" className="mb-5">
           <Container>
-            <NavbarBrand href="/" style={{ fontSize: 38 }}>
+            <NavbarBrand href="/Quote-Machine/" style={{ fontSize: 38 }}>
               Quote Machine
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
