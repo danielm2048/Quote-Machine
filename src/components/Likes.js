@@ -44,7 +44,7 @@ class Likes extends React.Component {
     if (this.props.user !== null) {
       const lData = (
         await axios.get(
-          `http://192.168.1.164:5000/api/likes/${this.props.user._id}`,
+          `https://gentle-beyond-48579.herokuapp.com/api/likes/${this.props.user._id}`,
           tokenConfig(store.getState)
         )
       ).data;
@@ -57,7 +57,7 @@ class Likes extends React.Component {
       console.table(body);
       let qData = (
         await axios.post(
-          "http://192.168.1.164:5000/api/quotes/liked",
+          "https://gentle-beyond-48579.herokuapp.com/api/quotes/liked",
           body,
           tokenConfig(store.getState)
         )
