@@ -53,12 +53,12 @@ class App extends React.Component {
       );
     return (
       <div>
-        <Router basename="/Quote-Machine">
+        <Router>
           <div className="container App">
             <AppNavbar />
             <Switch>
-              <Route path="/" exact component={Quotes} />
-              <PrivateRoute path="/Likes" component={Likes} />
+              <Route path="/Quote-Machine" exact component={Quotes} />
+              <PrivateRoute path="/Quote-Machine/Likes" component={Likes} />
               <Route component={PageNotFound} />
             </Switch>
           </div>
