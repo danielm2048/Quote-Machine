@@ -11,6 +11,7 @@ const quotesRouter = require("./routes/quotes");
 const usersRouter = require("./routes/users");
 const authRouter = require("./routes/auth");
 const likesRouter = require("./routes/likes");
+const commentsRouter = require("./routes/comments");
 
 app.use(cors());
 app.use(helmet());
@@ -19,6 +20,7 @@ app.use("/api/quotes", quotesRouter);
 app.use("/api/users", usersRouter);
 app.use("/api/auth", authRouter);
 app.use("/api/likes", likesRouter);
+app.use("/api/comments", commentsRouter);
 
 const uri = process.env.ATLAS_URI;
 

@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import axios from "axios";
 import Heart from "./heart/Heart";
-import Pic from "./Pic";
+import PicModal from "./PicModal";
 import NewQuoteButton from "./NewQuoteButton";
 import TweetThis from "./TweetThis";
 import MadeBy from "./MadeBy";
@@ -160,7 +160,7 @@ class Quotes extends React.Component {
               <div></div>
             </div>
           ) : (
-            <Pic picture={this.state.picture} />
+            <PicModal picture={this.state.picture} id={this.state.id} />
           )}
         </div>
         <br />

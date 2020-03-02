@@ -18,10 +18,6 @@ body {
   justify-content: center;
 }
 
-.App-link {
-  color: #09d3ac;
-}
-
 .picture-size {
   width: 370px;
   height: 350px;
@@ -32,6 +28,14 @@ body {
   border-style: groove;
   border-radius: 20px;
   align-self: center;
+  font-family: "Kalam", cursive;
+}
+
+.commentBox {
+  width: 350px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #172230;
   font-family: "Kalam", cursive;
 }
 
